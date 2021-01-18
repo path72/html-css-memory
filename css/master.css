@@ -1,0 +1,138 @@
+/************************************************
+
+  MOUSEOVER FLIP
+  based on :hover in CSS
+  CORREZIONE
+    > semplificazione header
+    > semplificazione senza .back
+       (dorso carta come background di .card)
+    > visibility al posto di opacity
+    > aggiunta carta active
+
+************************************************/
+
+/* PRESCRISIONI GENERALI */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Nerko One', cursive;
+  background-color: #add8e6;
+}
+
+/* INTESTAZIONE */
+header {
+  padding: 10px 0 20px 0;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1.5px 1.5px rgba(0,0,0,0.4);
+}
+
+/* GRIGLIA */
+main {
+  width: 604px;
+  margin: 0 auto;
+}
+.row {
+  margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer h4 {
+  text-align: center;
+  font-size: 14px;
+}
+
+/* CARTA */
+.card {
+  display: inline-block;
+  position: relative;
+  width: 138px;
+  height: 160px;
+  margin-right: 13px;
+  background-size: 90%;
+  background-image: url("../img/pattern.png");
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+.card:last-child {
+  margin-right: 0px;
+}
+
+/* FRONTE */
+.front {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+.card:hover .front,
+.card.active .front {
+  visibility: visible;
+  cursor: pointer;
+}
+.image {
+  width: 74%;
+  height: 74%;
+  margin: 13% auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.text {
+  position: absolute;
+  bottom: 12px;
+  width: 100%;
+  font-size: 22px;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  color: #e619c4;
+}
+
+
+
+
+/* DECLINAZIONI */
+.air_balloon .image {
+  background-image: url("../img/noun_air_balloon_3134741.png");
+}
+.air_balloon .text::after {
+  content: "Air balloon";
+}
+.bicycle .image {
+  background-image: url("../img/noun_Bicycle_3134821.png");
+}
+.bicycle .text::after {
+  content: "Bicycle";
+}
+.cruise_ship .image {
+  background-image: url("../img/noun_Cruise_Ship_3134824.png");
+}
+.cruise_ship .text::after {
+  content: "Cruise Ship";
+}
+.submarine .image {
+  background-image: url("../img/noun_Submarine_3134738.png");
+}
+.submarine .text::after {
+  content: "Submarine";
+}
+.tractor .image {
+  background-image: url("../img/noun_Tractor_3134797.png");
+}
+.tractor .text::after {
+  content: "Tractor";
+}
+.tram .image {
+  background-image: url("../img/noun_Tram_3134750.png");
+}
+.tram .text::after {
+  content: "Tram";
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--
+
+    CLICK FLIP
+    based on :focus in CSS and tabindex in HTML
+    CORREZIONE
+      > semplificazione header
+      > semplificazione senza .back
+         (dorso carta come background di .card)
+      > visibility al posto di opacity
+      > aggiunta carta active
+
+ -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Memory Game</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+
+    <!-- INTESTAZIONE -->
+    <header>
+        <h1>memory game</h1>
+    </header>
+
+    <!-- GRIGLIA: start -->
+    <main>
+
+      <!-- RIGA 1  -->
+      <div class="row">
+        <div class="card" tabindex="0">
+          <div class="front air_balloon">
+            <div class="image"></div>
+            <div class="text"></div>
+          </div>
+        </div>
+        <div class="card" tabindex="0">
+          <div class="front bicycle">
+            <div class="image"></div>
+            <div class="text"></div>
+          </div>
+        </div>
+        <div class="card" tabindex="0">
+          <div class="front cruise_ship">
+            <div class="image"></div>
+            <div class="text"></div>
+          </div>
+        </div>
+        <div class="card" tabindex="0">
+          <div class="front submarine">
+            <div class="image"></div>
+            <div class="text"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGA 2  -->
+      <div class="row">
+        <div class="card" tabindex="0">
+          <div class="front tractor">
+            <div class="image"></div>
+            <div class="text"></div>
+          </div>
+        </div>
+        <div class="card active">
+          <div class="front tram">
+            <div class="image"></div>
+            <div class="text"></div>
+          </div>
+        </div>
+        <div class="card" tabindex="0">
+          <div class="front tram">
+            <div class="image"></div>
+            <div class="text"></div>
+          </div>
+        </div>
+        <div class="card" tabindex="0">
+          <div class="front bicycle">
+            <div class="image"></div>
+            <div class="text"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGA 3  -->
+      <div class="row">
+        <div class="card" tabindex="0">
+          <div class="front submarine">
+            <div class="image"></div>
+            <div class="text"></div>
+          </div>
+        </div>
+        <div class="card" tabindex="0">
+          <div class="front tractor">
+            <div class="image"></div>
+            <div class="text"></div>
+          </div>
+        </div>
+        <div class="card" tabindex="0">
+          <div class="front air_balloon">
+            <div class="image"></div>
+            <div class="text"></div>
+          </div>
+        </div>
+        <div class="card" tabindex="0">
+          <div class="front cruise_ship">
+            <div class="image"></div>
+            <div class="text"></div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <!-- GRIGLIA: end -->
+
+    <!-- FOOTER -->
+    <footer>
+      <h4>from Team Boolean</h4>
+    </footer>
+
+
+  </body>
+</html>
